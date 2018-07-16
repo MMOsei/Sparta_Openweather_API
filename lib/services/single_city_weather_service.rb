@@ -15,7 +15,7 @@ class SingleCityWeather
 
     # city =Faker::Address.city
 
-    @city = JSON.parse(self.class.get("London,uk&appid=#{@api_key}").body)
+    @city = JSON.parse(self.class.get("Accra,ghana&appid=#{@api_key}").body)
     # puts @city
   end
 
@@ -25,6 +25,38 @@ class SingleCityWeather
 
   def get_weather
     @city['weather']
+  end
+
+  def get_description
+    @city['weather'][3]
+  end
+
+  def get_clouds
+    @city['clouds']
+  end
+
+  def get_main
+    @city['main']
+  end
+
+  def get_sys
+    @city['sys']
+  end
+
+  def get_coord
+    @city['coord']
+  end
+
+  def get_lat
+    @city['coord']['lon']
+  end
+
+  def get_long
+    @city['coord']['lat']
+  end
+
+  def get_cod
+    @city['cod']
   end
 
 end
