@@ -49,7 +49,7 @@ describe 'Open Weather API test' do
       expect(@uv.get_lat).to be >= (-180)
     end
 
-    it "should give latitude between -180 and 180 degrees celcius" do
+    it "should give latitude between -180 and 180 degrees" do
       expect(@uv.get_lat).to be_between(-180,180)
     end
 

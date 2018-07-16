@@ -23,23 +23,3 @@ class OpenweatherAPI
 end
 
 superClass = OpenweatherAPI.new
-
-# city = superClass.single_city_weather
-#
-# city.get_response
-# city.print_result
-#
-# data = superClass.historical_weather_data
-#
-# data.get_response
-# data.print_result
-#
-# uv = superClass.uv_index_service
-#
-# uv.get_response
-# uv.print_result
-
-five = superClass.five_day_weather
-
-five.get_response
-five.print_result

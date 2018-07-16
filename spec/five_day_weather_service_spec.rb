@@ -37,7 +37,7 @@ describe 'Open Weather API test' do
       expect(@five.get_response.values).to include(a_kind_of(Float))
     end
 
-    it "should have more than 10 keys" do
+    it "should have more than 3 keys" do
       expect(@five.get_response.keys.length).to be > 3
     end
 
